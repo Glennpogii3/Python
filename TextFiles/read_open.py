@@ -24,19 +24,20 @@
 # for char in reversed(text):
 #     print(char, end='')
 
-with open(r'C:\xampp\htdocs\Python\TextFiles\Jabberwocky.txt', 'r') as jabber:
-    while True:
-        line = jabber.readline().rstrip()
-        print(line)
-        if 'jubjub' in line.casefold():
-            break 
+# with open(r'C:\xampp\htdocs\Python\TextFiles\Jabberwocky.txt', 'r') as jabber:
+#     while True:
+#         line = jabber.readline().rstrip()
+#         print(line)
+#         if 'jubjub' in line.casefold():
+#             break 
         
-print('*' * 80)
-with open(r'C:\xampp\htdocs\Python\TextFiles\Jabberwocky.txt', 'r') as jabber: 
+# print('*' * 80)
+
+with open(r'C:\xampp\htdocs\Python\TextFiles\Jabberwocky.txt', encoding='utf-8') as jabber: 
     for line in jabber:
         print(line.rstrip())
-        if 'jubjub' in line.casefold():
-            break 
+        # if 'jubjub' in line.casefold():
+        #     break 
  
 
 
