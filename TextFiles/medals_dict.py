@@ -96,3 +96,18 @@ medals_table = [
     {'country': 'Syria', 'gold': 0, 'silver': 0, 'bronze': 1, 'rank': 86},
 ]
 
+
+def sort_key(d: dict) -> str:
+    return d['country']
+
+
+columns = ['country', 'gold', 'silver', 'bronze'] 
+
+with open(r'C:\xampp\htdocs\Python\TextFiles\country_medals.csv', 'w',  encoding='utf-8', newline='') as data_files: 
+    writer = csv.DictWriter(data_files, fieldnames=columns, extrasaction='ignore')
+    writer.writeheader()
+    
+    # for row in medals_table:
+    #     writer.writerow(row)
+    writer.writerows(sorted(medals_table, key=sort_key))
+    
