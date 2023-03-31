@@ -1,8 +1,9 @@
 
 countries = {}
 code_lookup = {}
+file_path = 'country_info.txt'
 
-with open(r'C:\xampp\htdocs\Python\TextFiles\country_info.txt', 'r') as countries_data: 
+with open(file_path, 'r') as countries_data:
     countries_data.readline()
     for row in countries_data: 
         data = row.strip('\n').split('|') 
@@ -20,9 +21,9 @@ with open(r'C:\xampp\htdocs\Python\TextFiles\country_info.txt', 'r') as countrie
             'currency': currency, 
         }
         
-#        print(country_dict)
+#       print(country_dict)
         countries[country.casefold()] = country_dict
-        #code_lookup = [code.casefold()] = country 
+#       code_lookup = [code.casefold()] = country
         countries[code.casefold()] = country_dict 
 
 while True:
