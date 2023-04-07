@@ -1,0 +1,7 @@
+                                      aaa 
+                                     aaaaa 
+                                      12 
+                                    aaaaaaa 
+                                2 2 Hellsd assd 
+gui.configure(background="light green")
+gui.geometry('900x400')

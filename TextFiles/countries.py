@@ -32,5 +32,5 @@ while True:
     if country_key in countries:
         country_data = countries[country_key] 
         print(f"The capital of the {country_choice} is {country_data['capital']}")
-    elif country_choice == 'quit':
+    elif country_choice == '0':
         break
